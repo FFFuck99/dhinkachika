@@ -31,7 +31,7 @@ def run_pipeline(pdb_id, mol2_path, smiles, ligand_code):
     ligand_code = ligand_code
     SMILES =smiles
     mol2_file = mol2_path
-    current_directory = '/10tb-storage/riddhis/bhumika/benchtesting_data/test/pdbqt_out/docked_complexes'
+    current_directory = '/10tb-storage/akshatw/dhinkachika/dhinkachika/ip_bio'
     csv_name=pdb_id
     output_directory = os.path.join(current_directory, f"{csv_name}_folder")
     if not os.path.exists(output_directory):
@@ -42,7 +42,7 @@ def run_pipeline(pdb_id, mol2_path, smiles, ligand_code):
         # Generate the input text file with file extensions
         input_txt = f'{pdb_id}.{ligand_id}_input.txt'
         with open(input_txt, 'w') as file:
-            file.write(f'/10tb-storage/riddhis/bhumika/benchtesting_data/test/pdbqt_out/docked_complexes/{pdb_id} {ligand_id}')
+            file.write(f'/10tb-storage/akshatw/dhinkachika/dhinkachika/ip_bio/{pdb_id} {ligand_id}')
 
         return input_txt
 
@@ -288,7 +288,7 @@ def run_pipeline(pdb_id, mol2_path, smiles, ligand_code):
        
     import subprocess
    # Run the shell script
-    os.system(f"bash /10tb-storage/riddhis/bhumika/benchtesting_data/test/pdbqt_out/docked_complexes/run_cavity.sh {cavity_input_path}")
+    os.system(f"bash /10tb-storage/akshatw/dhinkachika/dhinkachika/ip_bio/run_cavity.sh {cavity_input_path}")
        
    # Move the output files to the pair-specific output folder
     for file_name in os.listdir("."):
