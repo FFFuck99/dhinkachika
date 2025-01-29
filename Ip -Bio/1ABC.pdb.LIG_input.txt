@@ -1,1 +1,0 @@
-/10tb-storage/riddhis/bhumika/benchtesting_data/test/pdbqt_out/docked_complexes/1ABC.pdb LIG
