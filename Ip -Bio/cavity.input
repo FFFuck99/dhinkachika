@@ -16,8 +16,8 @@ DETECT_MODE			0
 #	Input files
 #	-- ligand_file should be assigned if detect_mode = 1
 #-----------------------------------------------------------------------
-RECEPTOR_FILE		 	receptor/1db4.pdb	
-LIGAND_FILE			receptor/1db4.mol2
+RECEPTOR_FILE		 	receptor/1bdm.pdb	
+LIGAND_FILE			receptor/Caf.mol2
 ########################################################################
 #	Parameter section
 ########################################################################
